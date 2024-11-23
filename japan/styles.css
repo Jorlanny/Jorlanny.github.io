@@ -1,0 +1,33 @@
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  background-color: #fff8e1;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  color: #ff6f61;
+}
+
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #ffcc80;
+  color: #000;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+a:hover {
+  background-color: #ffa726;
+}
+
+.image-container img {
+  width: 200px;
+  margin: 10px;
+}
+
+.audio-frame {
+  display: none;
+}
