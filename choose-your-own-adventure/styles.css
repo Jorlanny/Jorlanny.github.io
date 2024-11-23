@@ -1,0 +1,62 @@
+/* General Styling */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #1e1e1e;
+  color: #c9c9c9;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+h1 {
+  color: #ff4500;
+  text-shadow: 2px 2px 5px #000;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.2em;
+  margin: 20px 10px;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  display: inline-block;
+  margin: 15px 10px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #4b4b4b;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #ff4500;
+}
+
+/* Images */
+.main-image {
+  max-width: 90%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  filter: grayscale(80%);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.main-image:hover {
+  transform: scale(1.05);
+  filter: grayscale(50%);
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  font-size: 0.8em;
+  color: #7d7d7d;
+}
