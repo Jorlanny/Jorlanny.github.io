@@ -7,61 +7,23 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Audio Player -->
-  <audio id="background-music" autoplay loop>
-    <source src="audio/japanese-music.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+  <!-- Background Music -->
+  <iframe src="audio.html" class="audio-frame"></iframe>
 
   <!-- Main Content -->
-  <div id="app">
-    <h1>Pack Your Suitcase for Japan!</h1>
-    <p>Welcome to your virtual packing adventure! Plan your trip, choose what to pack, and get ready for a fun journey.</p>
-    <button onclick="loadPage('season')">Start Packing!</button>
+  <h1>Pack Your Suitcase for Japan!</h1>
+  <p>Welcome to your virtual packing adventure! Plan your trip, choose what to pack, and get ready for a fun journey.</p>
+
+  <div class="image-container">
+    <img src="https://live.staticflickr.com/4045/4549363374_f1dc6ef2f3_b.jpg" alt="Cherry Blossoms">
+    <img src="https://i.pinimg.com/control2/736x/97/55/31/975531a68fadbde43d61d4a6292f2229.jpg" alt="Japanese Food">
+    <img src="https://thb.tildacdn.net/tild6232-3730-4139-a564-633635663634/-/resize/504x/pointgr_white_highsp.png" alt="Shinkansen Train">
   </div>
 
-  <script>
-    // Function to dynamically load content
-    function loadPage(page) {
-      const app = document.getElementById('app');
-      if (page === 'season') {
-        app.innerHTML = `
-          <h1>Choose Your Season</h1>
-          <p>Pick the season for your trip to Japan.</p>
-          <button onclick="loadPage('packing')">Spring</button>
-          <button onclick="loadPage('packing')">Summer</button>
-          <button onclick="loadPage('packing')">Autumn</button>
-          <button onclick="loadPage('packing')">Winter</button>
-        `;
-      } else if (page === 'packing') {
-        app.innerHTML = `
-          <h1>Pack Your Suitcase</h1>
-          <p>Drag and drop items into your suitcase.</p>
-          <button onclick="loadPage('preferences')">Next</button>
-        `;
-      } else if (page === 'preferences') {
-        app.innerHTML = `
-          <h1>Travel Preferences</h1>
-          <p>What kind of traveler are you?</p>
-          <button onclick="loadPage('transportation')">Food Lover</button>
-          <button onclick="loadPage('transportation')">Cultural Explorer</button>
-          <button onclick="loadPage('transportation')">Shopaholic</button>
-        `;
-      } else if (page === 'transportation') {
-        app.innerHTML = `
-          <h1>Choose Transportation</h1>
-          <p>How will you travel around Japan?</p>
-          <button onclick="loadPage('outcome')">Shinkansen</button>
-          <button onclick="loadPage('outcome')">Public Transport</button>
-          <button onclick="loadPage('outcome')">Car Rental</button>
-        `;
-      } else if (page === 'outcome') {
-        app.innerHTML = `
-          <h1>Your Trip is Ready!</h1>
-          <p>You have successfully planned your trip to Japan!</p>
-          <button onclick="loadPage('season')">Start Over</button>
-        `;
-      }
+  <a href="season.html" class="start-button">Start Packing!</a>
+</body>
+</html>
+
     }
   </script>
 </body>
