@@ -1,4 +1,4 @@
-/* General Styling */
+
 body {
   font-family: 'Comic Sans MS', cursive, sans-serif;
   background-color: #fce4ec;
@@ -51,7 +51,6 @@ a:hover {
   animation: bounce 1.5s infinite;
 }
 
-/* Animations */
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
