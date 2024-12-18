@@ -1,7 +1,7 @@
 body {
   font-family: 'Baloo 2', cursive;
   text-align: center;
-  background-color: #fff5e6;
+  background: linear-gradient(180deg, #ffecd2 0%, #fcb69f 100%);
   color: #333;
   margin: 0;
   padding: 20px;
@@ -27,15 +27,23 @@ p {
   color: #444;
 }
 
-b {
-  color: #ff6f61;
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
 }
 
-i {
-  color: #ff9f80;
+li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+b {
+  color: #ff6f61;
 }
 
 body {
   background: linear-gradient(180deg, #ffecd2 0%, #fcb69f 100%);
 }
+
 
